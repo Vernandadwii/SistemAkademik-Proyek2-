@@ -13,9 +13,9 @@
    <bottom>
       <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="99.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgLogo" fitHeight="99.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../imagesMarnat.jpg" />
+                  <Image url="@../image/imagesMarnat.jpg" />
                </image>
             </ImageView>
          </children></HBox>
@@ -23,7 +23,7 @@
    <top>
       <HBox alignment="CENTER" prefHeight="65.0" prefWidth="600.0" style="-fx-background-color: bisque;" BorderPane.alignment="CENTER">
          <children>
-            <Label text="LogIn">
+            <Label fx:id="labelLogin" text="LogIn">
                <font>
                   <Font size="48.0" />
                </font>
@@ -38,7 +38,7 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Label text="Username : " />
+                        <Label fx:id="labelUsername" text="Username : " />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
@@ -48,7 +48,7 @@
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
                      <children>
-                        <Label text="Password : " />
+                        <Label fx:id="labelPass" text="Password : " />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
@@ -58,7 +58,7 @@
                   </HBox>
                   <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <children>
-                        <Button mnemonicParsing="false" text="LogIn" />
+                        <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#btnLoginOnAction" text="LogIn" />
                      </children>
                      <opaqueInsets>
                         <Insets />

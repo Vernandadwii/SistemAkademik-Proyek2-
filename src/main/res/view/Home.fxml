@@ -9,12 +9,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vernanda.controller.HomeController">
    <top>
       <HBox alignment="CENTER" prefHeight="96.0" prefWidth="600.0" style="-fx-background-color: LightBlue;" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Sistem Akademik">
+            <Label fx:id="labelSistemAkademik" text="Sistem Akademik">
                <font>
                   <Font size="46.0" />
                </font>
@@ -23,7 +22,10 @@
       </HBox>
    </top>
    <left>
-      <HBox prefHeight="382.0" prefWidth="172.0" style="-fx-background-color: LightCyan;" BorderPane.alignment="CENTER" />
+      <HBox alignment="CENTER" prefHeight="382.0" prefWidth="172.0" style="-fx-background-color: LightCyan;" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="cmbLanguage" onAction="#cmbLanguageOnAction" prefWidth="150.0" />
+         </children></HBox>
    </left>
    <center>
       <HBox prefHeight="382.0" prefWidth="355.0" BorderPane.alignment="CENTER">
@@ -38,10 +40,10 @@
                                  <children>
                                     <ImageView fitHeight="69.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../image_preview.png" />
+                                          <Image url="@../image/image_preview.png" />
                                        </image>
                                        <HBox.margin>
-                                          <Insets left="40.0" top="5.0" />
+                                          <Insets left="25.0" top="5.0" />
                                        </HBox.margin>
                                     </ImageView>
                                  </children>
@@ -70,10 +72,10 @@
                                  <children>
                                     <ImageView fitHeight="73.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true" scaleX="1.3">
                                        <image>
-                                          <Image url="@../../../../45939_1172622173357_1451686_n.jpg" />
+                                          <Image url="@../image/45939_1172622173357_1451686_n.jpg" />
                                        </image>
                                        <HBox.margin>
-                                          <Insets left="50.0" top="5.0" />
+                                          <Insets left="40.0" top="5.0" />
                                        </HBox.margin>
                                     </ImageView>
                                  </children>
@@ -105,10 +107,10 @@
                               </HBox>
                               <ImageView fitHeight="55.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../85kertas.JPG" />
+                                    <Image url="@../image/85kertas.JPG" />
                                  </image>
                                  <GridPane.margin>
-                                    <Insets left="45.0" top="7.0" />
+                                    <Insets left="30.0" top="7.0" />
                                  </GridPane.margin>
                               </ImageView>
                            </children>
@@ -132,10 +134,10 @@
                                        <children>
                                           <ImageView fitHeight="59.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../../42519d7789ed1e3d6f8ae14e1abcbe0d.jpg" />
+                                                <Image url="@../image/42519d7789ed1e3d6f8ae14e1abcbe0d.jpg" />
                                              </image>
                                              <HBox.margin>
-                                                <Insets left="45.0" top="8.0" />
+                                                <Insets left="35.0" top="8.0" />
                                              </HBox.margin>
                                           </ImageView>
                                        </children>
@@ -166,10 +168,10 @@
                                  <children>
                                     <ImageView fitHeight="60.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../download.png" />
+                                          <Image url="@../image/download.png" />
                                        </image>
                                        <HBox.margin>
-                                          <Insets left="40.0" top="8.0" />
+                                          <Insets left="35.0" top="8.0" />
                                        </HBox.margin>
                                     </ImageView>
                                  </children>

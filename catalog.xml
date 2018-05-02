@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:38477/WebApplication1/SistemAkademik?Tester" uri="xml-resources/web-service-references/SistemAkademik_Tester/wsdl/localhost_38477/WebApplication1/SistemAkademik.tester"/>
+    <system systemId="http://localhost:38477/WebApplication1/SistemAkademik?wsdl" uri="xml-resources/web-service-references/SistemAkademik/wsdl/localhost_38477/WebApplication1/SistemAkademik.wsdl"/>
+    <system systemId="http://localhost:38477/WebApplication1/SistemAkademik?xsd=1" uri="xml-resources/web-service-references/SistemAkademik/wsdl/localhost_38477/WebApplication1/SistemAkademik.xsd_1.xsd"/>
+    <system systemId="http://localhost:38477/WebApplication1/MYWebService?WSDL" uri="xml-resources/web-service-references/MYWebService/wsdl/localhost_38477/WebApplication1/MYWebService.wsdl"/>
+    <system systemId="http://localhost:38477/WebApplication1/MYWebService?xsd=1" uri="xml-resources/web-service-references/MYWebService/wsdl/localhost_38477/WebApplication1/MYWebService.xsd_1.xsd"/>
+</catalog>
